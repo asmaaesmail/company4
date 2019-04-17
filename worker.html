@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Made with WOW Slider - Create beautiful, responsive image sliders in a few clicks. Awesome skins and animations. Javascript slider" />
+      <title>جود لاند</title>
+      <link rel="shortcut icon" href="img/logo-verticale.png">
+      <!-- bootstrab -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- owel carsoul -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <!-- font awsome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <!-- animate -->
+      <link rel="stylesheet" href="css/animate.css">
+      
+     <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+      <!-- style -->
+      <link rel="stylesheet" href="css/style.css">
+      <style>
+          
+          /*
+
+RESPONSTABLE 2.0 by jordyvanraaij
+  Designed mobile first!
+
+If you like this solution, you might also want to check out the 1.0 version:
+  https://gist.github.com/jordyvanraaij/9069194
+
+*/
+.responstable {
+  margin: 1em 0;
+  width: 100%;
+  overflow: hidden;
+  background: #FFF;
+  color: #024457;
+  border-radius: 10px;
+  border: 1px solid #167F92;
+}
+.responstable tr {
+  border: 1px solid #efc9ab;
+}
+.responstable tr:nth-child(odd) {
+  background-color: #efc9ab;
+}
+.responstable th {
+  display: none;
+  border: 1px solid #FFF;
+  background-color: #b36b32;
+  color: #FFF;
+  padding: 1em;
+}
+.responstable th:first-child {
+  display: table-cell;
+  text-align: center;
+}
+.responstable th:nth-child(2) {
+  display: table-cell;
+}
+.responstable th:nth-child(2) span {
+  display: none;
+}
+.responstable th:nth-child(2):after {
+  content: attr(data-th);
+}
+@media (min-width: 480px) {
+  .responstable th:nth-child(2) span {
+    display: block;
+  }
+  .responstable th:nth-child(2):after {
+    display: none;
+  }
+}
+.responstable td {
+  display: block;
+  word-wrap: break-word;
+  max-width: 7em;
+}
+.responstable td:first-child {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #be9d83;
+}
+@media (min-width: 480px) {
+  .responstable td {
+    border:1px solid #be9d83;
+  }
+}
+.responstable th, .responstable td {
+  text-align: center;
+  margin: .5em 1em;
+    font-size: 14px
+}
+@media (min-width: 480px) {
+  .responstable th, .responstable td {
+    display: table-cell;
+    padding: 1em;
+  }
+}
+
+
+
+h1 {
+  font-family: Verdana;
+  font-weight: normal;
+  color: #024457;
+}
+h1 span {
+  color: #167F92;
+}
+          
+          .sec1-about{
+              direction: rtl
+          }
+          .sec1-about{
+              margin: 30px 0
+          }
+      </style>
+   </head>
+   <body >
+      <div class="nav1">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm">
+                  <div class="icon-nav nav-icons">
+                     <a href="#"> <i class="fab fa-twitter-square"></i></a> 
+                     <a href="#"> <i class="fab fa-facebook"></i></a>
+                     <a href="#"> <i class="fab fa-linkedin"></i></a> 
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- nav2 -->
+      <div class="nav2">
+         <div class="div-logo div-nav2">
+            <a href="index.html"><img src="img/logo.jpg"></a> 
+         </div>
+         <div>
+            <div class="content div-nav2">
+               <div>
+                  <i class="fas fa-headphones-alt i-nav2 caramel"></i>
+               </div>
+               <a href="tel:+6494461709" class="a-phone">
+                  <div>
+                     <p class="p-nav2 caramel">تريد المساعدة ؟</p>
+                     <p class="p-nav2 gray">05084698751</p>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="content div-nav2">
+            <div>
+               <i class="far fa-clock i-nav2 caramel"></i>
+            </div>
+            <div class="nav2-margin-icon">
+               <p class="p-nav2 caramel">اوقات العمل</p>
+               <p class="p-nav2 gray">24 ساعة في اليوم</p>
+            </div>
+         </div>
+         <div class="content div-nav2">
+            <div>
+               <i class="far fa-map i-nav2 caramel"></i>
+            </div>
+            <a href="map.html" class="a-map">
+               <div class="nav2-margin-icon">
+                  <p class="p-nav2 caramel">اين نحن ؟</p>
+                  <p class="p-nav2 gray">الدقهلية - دكرنس</p>
+               </div>
+            </a>
+         </div>
+      </div>
+      <!-- side nav bar -->
+      <div id="mySidenav" class="sidenav">
+         <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="index.html" class="navs-side ">الرئيسية</a>
+         <a href="about-us.html" class="navs-side active1" >عن الشركة</a>
+         <a href="gallery.html" class="navs-side">مكتبة الصور والفيديوهات</a>
+         <a href="about-ruwwad.html" class="navs-side" >وظائف خالية</a>
+          <a href="opinion.html" class="navs-side" >اراء العملاء</a>
+         
+       
+       
+        
+      </div>
+      <!-- main thats margin left -->
+      <div id="main">
+         <section class="second-nav">
+            <div class="nav3">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-sm-12 align-center">
+                        <ul class="navbar-rayiysia">
+                           <li  ><a href="index.html">الرئيسية</a></li>
+                           <li class="active1" ><a href="about-us.html">عن الشركة</a></li>
+                           <li><a href="gallery.html">مكتبة الصور والفيديو</a></li>
+                           <li><a href="about-ruwwad.html">وظائف خالية</a></li>
+                           <li><a href="opinion.html">اراء العملاء</a></li>
+                          
+                        </ul>
+                     </div>
+                   
+                  </div>
+               </div>
+            </div>
+            <!-- nav phone -->
+            <div class="nav3-phone">
+               <img src="img/logo.jpg">
+               <i class="fas fa-bars open-navbar"  onclick="openNav()"></i>
+            </div>
+         </section>
+         
+         <!-- -------------------section1------------------ -->
+         <section class="sec1  sec1-about">
+    <p class="sec-p-title"><span class="span-caramel">جدول  </span> <span class="span-black">المحلات</span></p>
+
+<table class="responstable">
+  
+  <tr>
+    <th>اسم المحل</th>
+    <th data-th="Driver details"><span>المحافظة</span></th>
+    <th>المركز</th>
+    <th>المدينة</th>
+    <th>اسم الشارع</th>
+  </tr>
+  
+  <tr>
+    <td>محمد داود</td>
+    <td>الدقهلية</td>
+    <td>المنصورة</td>
+    <td>طناح</td>
+    <td>ميت محمود بجوار المشروع</td>
+  </tr>
+  
+  <tr>
+    <td>عثمان بلال</td>
+    <td>الدقهلية</td>
+    <td>المنصورة</td>
+    <td>طناح</td>
+    <td>ميت محمود بجوار الكبري</td>
+  </tr>
+  
+  <tr>
+    <td>احمد يوسف</td>
+    <td>الدقهلية</td>
+    <td>المنصورة</td>
+    <td>طناح</td>
+    <td>ميت محمود بجوار المشروع</td>
+  </tr>
+  
+  <tr>
+   <td>ابراهيم رفعت</td>
+    <td>الدقهلية</td>
+    <td>المنصورة</td>
+    <td>طناح</td>
+    <td>ميت محمود بجوار المشروع</td>
+  </tr>
+   <tr>
+   <td>هيثم ابوزيد</td>
+    <td>الدقهلية</td>
+    <td>المنصورة</td>
+    <td>طناح</td>
+    <td>ميت محمود اخر البلد</td>
+  </tr>
+   <tr>
+   <td>احمد عوض</td>
+    <td>الدقهلية</td>
+    <td>المنصورة</td>
+    <td>طناح</td>
+    <td>ميت محمود اخر البلد</td>
+  </tr>
+  
+</table>
+         </section>
+         
+         
+         <section class="sec1  sec1-about">
+    <p class="sec-p-title"><span class="span-caramel">جدول  </span> <span class="span-black">العملاء</span></p>
+
+<table class="responstable">
+  
+  <tr>
+    <th>اسم العميل</th>
+    <th>كود العميل</th>
+    <th>السن</th>
+    <th>رقم التليفون</th>
+  </tr>
+  
+  <tr>
+    <td>محمد احمد يوسف</td>
+    <td>1319</td>
+    <td>25</td>
+    <td>012745895</td>
+  </tr>
+  
+  <tr>
+    <td>خيري عبد المحسن السيد </td>
+   
+    <td>1320</td>
+    <td>38</td>
+    <td>012847444</td>
+  </tr>
+  
+  <tr>
+    <td>نادر السيد علي</td>
+    <td>1321</td>
+    <td>46</td>
+    <td>0120554158</td>
+    
+  </tr>
+  
+  <tr>
+   <td>حسين محمود علي</td>
+    <td>1332</td>
+    <td>48</td>
+    <td>010145885</td>
+   
+  </tr>
+   <tr>
+   <td>فارس ابراهيم السيد</td>
+    <td>1327</td>
+    <td>23</td>
+    <td>012582555</td>
+    
+  </tr>
+   <tr>
+   <td>اسامة محمد احمد</td>
+    <td>1329</td>
+    <td>47</td>
+    <td>011554885</td>
+  </tr>
+  
+</table>
+         </section>
+         
+       <!-- ---------------------------------------------------------------- -->
+         
+         <section class="sec1  sec1-about">
+    <p class="sec-p-title"><span class="span-caramel">جدول  </span> <span class="span-black">المنتجات</span></p>
+
+<table class="responstable">
+  
+  <tr>
+    <th>اسم المنتج</th>
+   
+    <th>تاريخ الانتاج</th>
+    <th>تاريخ الانتهاء</th>
+    <th>مدة الصلاحية</th>
+  </tr>
+  
+  <tr>
+    <td>خل طبيعي</td>
+    <td>3/7/2015</td>
+    <td>3/7/2015</td>
+    <td>  سنين  <span>3</span></td>
+    
+  </tr>
+  
+  <tr>
+    <td>دقيق</td>
+    <td>1/1/2015</td>
+    <td>1/7/2015</td>
+    <td> شهور  <span>6</span></td>
+  </tr>
+  
+  <tr>
+    <td>مربي</td>
+    <td>7/8/2017</td>
+    <td>7/9/2017</td>
+    <td> شهر</td>
+  </tr>
+  
+  <tr>
+  <td>جبنة بيضا</td>
+    <td>17/3/2015</td>
+    <td>17/5/2015</td>
+    <td>  شهرين</td>
+  </tr>
+   <tr>
+   <td>عسل اسود</td>
+    <td>15/3/2017</td>
+    <td>3/7/2019</td>
+    <td>  سنتين</td>
+  </tr>
+   <tr>
+   <td>حلاوة طحنية</td>
+    <td>15/8/2017</td>
+    <td>15/8/2018</td>
+    <td> سنة</td>
+  </tr>
+  
+</table>
+         </section>
+         <!-- ----------------------------------------------------------------- -->
+         
+         
+          <section class="sec1  sec1-about">
+    <p class="sec-p-title"><span class="span-caramel">جدول  </span> <span class="span-black">الموظفين</span></p>
+
+<table class="responstable">
+  
+  <tr>
+    <th>الاسم</th>
+   
+    <th>المسمي الوظيفي</th>
+    <th>السن </th>
+    <th>الرقم  المالي</th>
+  </tr>
+  
+  <tr>
+    <td>محمد منير محمد</td>
+    <td>مدير عام</td>
+    <td>53</td>
+    <td> 289000003587</td>
+    
+  </tr>
+  
+  <tr>
+    <td>محروس محمد حسين</td>
+    <td>مدير انتاج وتشغيل</td>
+    <td>40</td>
+    <td> 289000003613</td>
+  </tr>
+  
+  <tr>
+    <td>احمد علي السعيد</td>
+    <td>مدير شئون اداريه</td>
+    <td>43</td>
+    <td>28900000094</td>
+  </tr>
+  
+  <tr>
+  <td>عمر سامي حجازي</td>
+    <td>مناديب تسويق</td>
+    <td>25</td>
+    <td> 28900003614</td>
+  </tr>
+   <tr>
+   <td>مصطفي حسين الحمدي</td>
+    <td>عامل</td>
+    <td>23</td>
+    <td>2890003606</td>
+  </tr>
+   <tr>
+   <td>زكريا جاد المتولي</td>
+    <td>عامل</td>
+    <td>28</td>
+    <td> 2890000371</td>
+  </tr>
+  
+</table>
+         </section>
+         
+        
+         <!-- ------------section footer----------- -->
+         <section class="footer">
+           <a href="team.html" > فريق عمل المشروع </a>
+         </section>
+       </div>
+      <!-- genral scripts -->
+      <!-- jquery -->
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <!-- bootstrab -->
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- wow -->
+      <script src="js/wow.min.js"></script>
+      
+      <!-- ------beginnen of special scripts for this page only---------- -->
+      <!-- OwlCarousel -->
+      <script src="js/owl.carousel.min.js"></script>
+       <script>
+           $('.owl-carousel').owlCarousel({
+		rtl: true,
+		loop: true,
+		margin: 5,
+		nav: true,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		responsive: {
+			0: {
+				items: 2
+			},
+			600: {
+				items: 3
+			},
+			1000: {
+				items: 4
+			}
+		}
+	})
+       </script>
+      <!-- script -->
+      <script src="js/jquery.countTo.js"></script>
+      <script>
+          
+		
+		$('.timer').countTo();
+
+      </script>
+      <!-- ------ end of special scripts for this page only---------- -->
+      <script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+      <script src="js/script.js"></script>
+      
+      
+    
+   </body>
+</html>
