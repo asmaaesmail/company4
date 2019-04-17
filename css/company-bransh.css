@@ -1,0 +1,162 @@
+.branssh-sec1 {
+	width: 100%;
+	height: 40vh;
+	background-image: url(../img/shahna.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left center;
+	position: relative
+}
+
+.title-company {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff
+}
+
+.company-bransh-main {
+	position: absolute;
+	z-index: 9999;
+	right: 20px;
+	bottom: 0;
+	color: #fff;
+}
+
+
+/*sec2*/
+
+.branssh-sec2 {
+	padding-top: 101px;
+	padding-bottom: 60px !important
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+}
+
+.cont-gallery {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	flex: 1 0 24rem;
+	box-shadow: 1px 1px 12px rgb(198, 208, 241);
+	overflow: hidden;
+	height: 260px;
+	background-color: white
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	height: 36px !important;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+	position: relative;
+	float: left;
+	padding: 6px 12px;
+	margin-left: -1px;
+	line-height: 1.42857143;
+	color: #b36b1d;
+	text-decoration: none;
+	background-color: #fff;
+	border: 1px solid #b36b1d;
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+	z-index: 2;
+	color: #ffffff;
+	background-color: #b36b1d;
+	border-color: #b36b1d;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+	z-index: 3;
+	color: #fff;
+	cursor: default;
+	background-color: #b36b1d;
+	border-color: #b36b1d;
+}
+
+.pagination-right {
+	text-align: center
+}
